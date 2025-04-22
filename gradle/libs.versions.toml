@@ -1,60 +1,58 @@
 [versions]
-kotlin = "2.1.10"
-kotlinx = "1.10.1"
+kotlin = "2.1.20"
+kotlinx = "1.10.2"
 spring-boot = "2.7.18"
 spring-framework = "5.3.39"
-spring-framework-6x = "6.2.3"
-spring-boot-3x = "3.4.2"
+spring-framework-6x = "6.2.6"
+spring-boot-3x = "3.4.4"
 spring-dependency-management = "1.1.7"
 spring-kafka = "2.9.13"
-spring-kafka-3x = "3.3.2"
-couchbase-client = "3.7.8"
-couchbase-client-metrics = "0.7.8"
-couchbase-kotlin = "1.4.8"
-jackson = "2.18.2"
-arrow = "2.0.1"
+spring-kafka-3x = "3.3.4"
+couchbase-client = "3.8.0"
+couchbase-client-metrics = "0.8.0"
+couchbase-kotlin = "1.5.0"
+jackson = "2.18.3"
+arrow = "2.1.0"
 arrowSuspendApp = "0.5.0"
 arrow-jackson = "0.15.1"
-io-reactor = "3.7.3"
+io-reactor = "3.7.5"
 io-reactor-extensions = "1.2.3"
-slf4j = "2.0.16"
+slf4j = "2.0.17"
 kafka = "3.9.0"
 kafka-kotlin = "0.4.1"
-kafka-streams-registry = "7.8.1"
+kafka-streams-registry = "7.9.0"
 dokka = "2.0.0"
 knit = "0.5.0"
 kover = "0.9.1"
-ktor = "3.1.0"
-koin = "4.1.0-Beta5"
+ktor = "3.1.2"
+koin = "4.1.0-Beta7"
 r2dbc-spi = "1.0.0.RELEASE"
 r2dbc-postgresql = "0.8.13.RELEASE"
-elastic = "8.17.2"
-mongodb = "5.3.1"
-wiremock = "3.12.0"
-testcontainers = "1.20.4"
+elastic = "8.18.0"
+mongodb = "5.4.0"
+wiremock = "3.12.1"
+testcontainers = "1.20.6"
 r2dbc-mssql = "1.0.2.RELEASE"
-spotless = "7.0.2"
-detekt = "1.23.7"
-wire = "5.3.0"
-io-grpc = "1.70.0"
+spotless = "7.0.3"
+detekt = "1.23.8"
+wire = "5.3.1"
+io-grpc = "1.72.0"
 io-grpc-kotlin = "1.4.1"
 google-protobuf = "3.25.6"
 gradle-release = "3.1.0"
 nexusPublish = "2.0.0"
-shadow = "8.1.1"
 hoplite = "2.9.0"
-junit = "5.11.4"
+junit = "5.12.2"
 kotest = "6.0.0.M1"
 mockito = "5.4.0"
-quiver = "0.5.13"
+quiver = "1.0.0"
 akkurate = "0.11.0"
-exposed = "0.59.0"
-kotlinx-serialization = "1.8.0"
+kotlinx-serialization = "1.8.1"
 ktlint = "1.5.0"
 kotlinBinaryCompatibilityValidator = "0.17.0"
 snakeyaml = "2.4"
-micronaut = "4.8.3"
-micronaut-starter = "4.7.6"
+micronaut = "4.8.11"
+micronaut-starter = "4.8.2"
 micronaut-micrometer = "1.3.1"
 dagger = "2.51.1"
 
@@ -75,7 +73,7 @@ kotlinx-serialization-protobuf = { module = "org.jetbrains.kotlinx:kotlinx-seria
 # Micronaut
 snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyaml" }
 micronaut-parent = { module = "io.micronaut.platform:micronaut-parent", version.ref = "micronaut-starter" }
-micronaut-kotlin-runtime = { module = "io.micronaut.kotlin:micronaut-kotlin-runtime", version = "4.5.0" }
+micronaut-kotlin-runtime = { module = "io.micronaut.kotlin:micronaut-kotlin-runtime", version = "4.6.0" }
 micronaut-serde-jackson = { module = "io.micronaut.serde:micronaut-serde-jackson", version = "2.14.0" }
 micronaut-http-client = { module = "io.micronaut:micronaut-http-client", version.ref = "micronaut" }
 micronaut-http-server-netty = { module = "io.micronaut:micronaut-http-server-netty", version.ref = "micronaut" }
@@ -145,6 +143,9 @@ koin-logger-slf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref =
 # r2dbc
 r2dbc-spi = { module = "io.r2dbc:r2dbc-spi", version.ref = "r2dbc-spi" }
 r2dbc-postgresql = { module = "io.r2dbc:r2dbc-postgresql", version.ref = "r2dbc-postgresql" }
+kotliquery = { module = "com.github.seratch:kotliquery", version = "1.9.1" }
+h2Database = { module = "com.h2database:h2", version = "2.3.232" }
+
 
 # postgres
 postgresql = { module = "org.postgresql:postgresql", version = "42.7.5" }
@@ -157,14 +158,12 @@ mongodb-kotlin-coroutine = { module = "org.mongodb:mongodb-driver-kotlin-corouti
 mongojack = { module = "org.mongojack:mongojack", version = "5.0.2" }
 
 # misc
-lettuce-core = { module = "io.lettuce:lettuce-core", version = "6.5.3.RELEASE" }
-logback-classic = { module = "ch.qos.logback:logback-classic", version = "1.5.16" }
-logback-core = { module = "ch.qos.logback:logback-core", version = "1.5.16" }
+lettuce-core = { module = "io.lettuce:lettuce-core", version = "6.5.5.RELEASE" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version = "1.5.18" }
+logback-core = { module = "ch.qos.logback:logback-core", version = "1.5.18" }
 log4j-slf4j2-impl = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version = "2.24.3" }
 r2dbc-mssql = { module = "io.r2dbc:r2dbc-mssql", version.ref = "r2dbc-mssql" }
-microsoft-sqlserver-jdbc = { module = "com.microsoft.sqlserver:mssql-jdbc", version = "12.8.1.jre11" }
-exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
-exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+microsoft-sqlserver-jdbc = { module = "com.microsoft.sqlserver:mssql-jdbc", version = "12.10.0.jre11" }
 
 ### Testing
 wiremock-standalone = { module = "org.wiremock:wiremock-standalone", version.ref = "wiremock" }
@@ -212,7 +211,7 @@ google-protobuf-kotlin = { module = "com.google.protobuf:protobuf-kotlin", versi
 protoc = { module = "com.google.protobuf:protoc", version.ref = "google-protobuf" }
 hoplite = { module = "com.sksamuel.hoplite:hoplite-core", version.ref = "hoplite" }
 hoplite-yaml = { module = "com.sksamuel.hoplite:hoplite-yaml", version.ref = "hoplite" }
-google-gson = { module = "com.google.code.gson:gson", version = "2.12.1" }
+google-gson = { module = "com.google.code.gson:gson", version = "2.13.0" }
 
 
 caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version = "3.2.0" }
@@ -258,18 +257,17 @@ kotlinter = { id = "org.jmailen.kotlinter", version = "5.0.1" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 knit = { id = "org.jetbrains.kotlinx:kotlinx-knit", version.ref = "knit" }
 kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
-gitVersioning = { id = "com.palantir.git-version", version = "3.1.0" }
+gitVersioning = { id = "com.palantir.git-version", version = "3.2.0" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 wire = { id = "com.squareup.wire", version.ref = "wire" }
-shadowJar = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
 gradle-release = { id = "net.researchgate.release", version.ref = "gradle-release" }
 nexusPublish = { id = "io.github.gradle-nexus.publish-plugin", version.ref = "nexusPublish" }
 testLogger = { id = "com.adarshr.test-logger", version = "4.0.0" }
-protobuf = { id = "com.google.protobuf", version = "0.9.4" }
+protobuf = { id = "com.google.protobuf", version = "0.9.5" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 binaryCompatibilityValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "kotlinBinaryCompatibilityValidator" }
-google-ksp = { id = "com.google.devtools.ksp", version = "2.1.10-1.0.30" }
-micronaut-application = { id = "io.micronaut.application", version = "4.4.5" }
-micronaut-aot = { id = "io.micronaut.aot", version = "4.4.5" }
-micronaut-library = { id = "io.micronaut.library", version = "4.4.5" }
+google-ksp = { id = "com.google.devtools.ksp", version = "2.1.20-2.0.0" }
+micronaut-application = { id = "io.micronaut.application", version = "4.5.3" }
+micronaut-aot = { id = "io.micronaut.aot", version = "4.5.3" }
+micronaut-library = { id = "io.micronaut.library", version = "4.5.3" }

@@ -22,7 +22,7 @@ class Stove : AbstractProjectConfig() {
           container = MssqlContainerOptions(
             toolsPath = ToolsPath.After2019
           ) {
-            dockerImageName = "mcr.microsoft.com/mssql/server:2022-latest"
+            dockerImageName = "mcr.microsoft.com/mssql/server:2022-CU16-ubuntu-22.04"
             withStartupAttempts(3)
           },
           configureExposedConfiguration = { _ ->
@@ -85,7 +85,7 @@ class MssqlSystemTests :
         mssql {
           ops {
             val result = select("SELECT 1") {
-              it.getInt(1)
+              it.int(1)
             }
             result.first() shouldBe 1
           }
@@ -96,11 +96,11 @@ class MssqlSystemTests :
             query = "select * from Person",
             mapper = {
               Person(
-                it.getInt(1),
-                it.getString(2),
-                it.getString(3),
-                it.getString(4),
-                it.getString(5)
+                it.int(1),
+                it.string(2),
+                it.string(3),
+                it.string(4),
+                it.string(5)
               )
             }
           ) { result ->
